@@ -33,3 +33,81 @@
   .motivation-explanation>p:not(.eyebrow){font-size:14px;line-height:1.85}
   .teaser .teaser-summary{font-size:14px;margin-bottom:24px}
 }
+
+/* Larger reading text; retain the existing title and heading sizes. */
+body{font-size:18px}
+.nav-links a{font-size:15px}
+.publication-authors{font-size:18px}
+sup{font-size:12px}
+.affiliation{font-size:16px}
+.corresponding{font-size:13px}
+.resource-button{font-size:15px}
+.soon{font-size:12px}
+.section-intro{font-size:19px}
+.teaser-heading>p{font-size:13px}
+.image-label{font-size:11px}
+.prompt{font-size:13px}
+.abstract-copy{font-size:18px}
+.step-number{font-size:13px}
+.method-points p,.detail-content>p{font-size:17px}
+.paper-figure figcaption{font-size:14px}
+.motivation-explanation>p:not(.eyebrow),.teaser .teaser-summary{font-size:18px}
+.research-detail summary{font-size:16px}
+.task-tabs button{font-size:16px}
+.benchmark{font-size:12px}
+.result-lead p:not(.benchmark){font-size:15px}
+.result-stat>span{font-size:14px}
+.result-stat small{font-size:12px}
+.results-table{font-size:14px}
+.results-table thead th{font-size:13px}
+.results-table .ours th span{font-size:11px}
+.table-note{font-size:13px}
+.routing-copy,.inference-note{font-size:17px}
+.requirements-line,.inference-header a,.code-selector button{font-size:14px}
+.code-block pre{font-size:14px}
+.copy-button,.code-label{font-size:12px}
+.setup-detail .code-block pre{padding-top:48px}
+.inference-footnote{font-size:13px}
+.citation-note{font-size:14px}
+.citation-code pre{font-size:13px;padding-top:48px}
+.footer p{font-size:12px}
+.figure-dialog figcaption,.dialog-close{font-size:14px}
+
+@media(max-width:900px){
+  .publication-authors{font-size:16px}
+  .motivation-explanation>p:not(.eyebrow){font-size:16px}
+  .code-block pre{font-size:13px}
+}
+@media(max-width:700px){
+  .motivation-explanation>p:not(.eyebrow),.teaser .teaser-summary{font-size:17px}
+}
+@media(max-width:640px){
+  body{font-size:17px}
+  .nav-links{gap:12px}
+  .nav-links a{font-size:12px}
+  .publication-authors{font-size:15px}
+  .affiliation{font-size:14px}
+  .corresponding{font-size:12px}
+  .resource-button{font-size:13px}
+  .soon{font-size:10px}
+  .section-intro,.abstract-copy{font-size:17px}
+  .teaser-heading>p,.prompt{font-size:13px}
+  .image-label{font-size:11px}
+  .method-points p,.detail-content>p{font-size:16px}
+  .paper-figure figcaption,.table-note{font-size:13px}
+  .research-detail summary{font-size:14px}
+  .task-tabs button{font-size:12px}
+  .benchmark{font-size:10px}
+  .result-lead p:not(.benchmark){font-size:14px}
+  .result-stat>span{font-size:12px}
+  .result-stat small{font-size:11px}
+  .results-table{font-size:13px}
+  .results-table thead th{font-size:12px}
+  .routing-copy,.inference-note{font-size:16px}
+  .requirements-line{font-size:12px}
+  .inference-header a,.code-selector button{font-size:12px}
+  .code-block pre,.citation-code pre{font-size:12px}
+  .code-label,.copy-button{font-size:11px}
+  .inference-footnote,.citation-note{font-size:12px}
+  .figure-dialog figcaption{font-size:12px}
+}
