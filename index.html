@@ -38,7 +38,7 @@
   <header class="site-header">
     <nav class="container site-nav" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="FrameForge home"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="11" width="18" height="18" rx="4" fill="currentColor"/><path d="M17 17h7m-7 0v8m0-4h5" stroke="white" stroke-width="1.8" fill="none"/></svg>FrameForge</a>
-      <div class="nav-links"><a href="#abstract">Overview</a><a href="#method">Method</a><a href="#results">Results</a><a href="#resources">Resources <span aria-hidden="true">↗</span></a></div>
+      <div class="nav-links"><a href="#motivation">Overview</a><a href="#method">Method</a><a href="#results">Results</a><a href="#resources">Resources <span aria-hidden="true">↗</span></a></div>
     </nav>
   </header>
   <main id="main">
@@ -57,14 +57,29 @@
       </div>
     </section>
 
+    <section class="motivation-teaser container" id="motivation" aria-labelledby="motivation-title">
+      <div class="motivation-layout">
+        <figure class="paper-figure motivation-figure">
+          <button class="figure-button" data-lightbox="static/images/motivation.webp" data-caption="Motivation: condition-target transformation magnitudes overlap with visual changes learned from video." aria-label="Enlarge the motivation figure"><img src="static/images/motivation.webp" alt="Motivation: natural video-frame LPIPS distances overlap with the different condition-to-target distance distributions of image editing, subject-driven generation, and Canny-to-image generation" width="1800" height="1509" fetchpriority="high" decoding="async"></button>
+          <figcaption>Video-frame and condition-to-target LPIPS distributions. Dashed lines mark the median distance for each task. <span class="enlarge-hint">Click to enlarge ↗</span></figcaption>
+        </figure>
+        <div class="motivation-explanation">
+          <p class="eyebrow">Core idea</p>
+          <h2 id="motivation-title" class="section-title">Image generation through adaptive virtual temporal relations.</h2>
+          <p>Video models learn visual transformations across time. Conditional image-generation tasks also require different degrees of change between the condition and the target.</p>
+          <p>FrameForge models these changes as <strong>input-adaptive virtual temporal relations</strong>, using video priors to accommodate differences across tasks and individual inputs.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="teaser container" aria-labelledby="teaser-title">
       <div class="teaser-heading"><h2 id="teaser-title">Multi tasks. <span>One shared model.</span></h2><p>Original results from the paper · 512 × 512</p></div>
+      <p class="teaser-summary">Building on this idea, <strong>one FrameForge model with a shared LoRA</strong> supports all three tasks below.</p>
       <div class="teaser-grid">
-        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot subject-dot"></span>Subject-driven generation</figcaption><div class="image-pair"><div><span class="image-label">Reference</span><img src="static/images/subject-input.webp" alt="Reference corgi with a distinctive white chest" width="512" height="512" fetchpriority="high"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/subject-output.webp" alt="The same corgi sitting on top of pink fabric" width="512" height="512" fetchpriority="high"></div></div><p class="prompt">“A dog on top of pink fabric”</p></figure>
-        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot canny-dot"></span>Canny-to-image generation</figcaption><div class="image-pair"><div><span class="image-label">Edge map</span><img src="static/images/canny-input.webp" alt="Canny edge map defining a cat sitting on a chair" width="512" height="512" fetchpriority="high"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/canny-output.webp" alt="Generated tabby cat preserving the pose and chair geometry" width="512" height="512" fetchpriority="high"></div></div><p class="prompt">Follow the structure of an edge map.</p></figure>
-        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot editing-dot"></span>Instruction-guided editing</figcaption><div class="image-pair"><div><span class="image-label">Source image</span><img src="static/images/editing-input.webp" alt="An awake orange cat resting on a gray sofa" width="512" height="512" fetchpriority="high"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/editing-output.webp" alt="The orange cat changed into a sleeping pose on the same sofa" width="512" height="512" fetchpriority="high"></div></div><p class="prompt">“Change the action of cat to sleeping”</p></figure>
+        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot subject-dot"></span>Subject-driven generation</figcaption><div class="image-pair"><div><span class="image-label">Reference</span><img src="static/images/subject-input.webp" alt="Reference corgi with a distinctive white chest" width="512" height="512" loading="lazy"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/subject-output.webp" alt="The same corgi sitting on top of pink fabric" width="512" height="512" loading="lazy"></div></div><p class="prompt">“A dog on top of pink fabric”</p></figure>
+        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot canny-dot"></span>Canny-to-image generation</figcaption><div class="image-pair"><div><span class="image-label">Edge map</span><img src="static/images/canny-input.webp" alt="Canny edge map defining a cat sitting on a chair" width="512" height="512" loading="lazy"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/canny-output.webp" alt="Generated tabby cat preserving the pose and chair geometry" width="512" height="512" loading="lazy"></div></div><p class="prompt">Follow the structure of an edge map.</p></figure>
+        <figure class="teaser-task"><figcaption class="task-name"><span class="task-dot editing-dot"></span>Instruction-guided editing</figcaption><div class="image-pair"><div><span class="image-label">Source image</span><img src="static/images/editing-input.webp" alt="An awake orange cat resting on a gray sofa" width="512" height="512" loading="lazy"></div><span class="pair-arrow" aria-hidden="true">→</span><div><span class="image-label">FrameForge</span><img src="static/images/editing-output.webp" alt="The orange cat changed into a sleeping pose on the same sofa" width="512" height="512" loading="lazy"></div></div><p class="prompt">“Change the action of cat to sleeping”</p></figure>
       </div>
-      <p class="teaser-summary">A single shared LoRA adapts a video foundation model to preserve subjects,<br class="desktop-break"> follow structure, and perform instruction-guided edits.</p>
     </section>
 
     <section class="section abstract-section" id="abstract" aria-labelledby="abstract-title">
@@ -75,7 +90,6 @@
       <div class="container"><div class="section-heading"><p class="eyebrow">The approach</p><h2 id="method-title" class="section-title">Learn <em>how far</em>, and <em>how</em>, an image should change.</h2><p class="section-intro">Treat the condition and target as frames in a virtual video.<br class="desktop-break"> Adapt their temporal relation to the input and the denoising step.</p></div>
         <div class="method-points"><article><span class="step-number">01 / MoTE</span><h3>Choose the temporal relation.</h3><p>A lightweight router selects one of three temporal RoPE experts. Short, medium, and long virtual intervals provide different transformation priors, using equivalent video-frame spans of <strong>17, 69, and 121</strong>.</p></article><article><span class="step-number">02 / CoTR</span><h3>Build an intermediate pathway.</h3><p>One noise-initialized reasoning latent connects the condition to the target. A reasoning-bottleneck attention mask encourages this pathway during intermediate training; inference uses full attention.</p></article></div>
         <figure class="paper-figure pipeline-figure"><button class="figure-button" data-lightbox="static/images/pipeline.webp" data-caption="FrameForge overview: Mixture of Temporal Experts and Chain of Temporal Reasoning." aria-label="Enlarge the FrameForge pipeline diagram"><img src="static/images/pipeline.webp" alt="FrameForge pipeline: a temporal expert router selects RoPE intervals for an MM-DiT with a shared LoRA; text, condition, reasoning latent, and target tokens interact through attention" width="1685" height="1182" loading="lazy"></button><figcaption>FrameForge combines input-adaptive temporal routing and a latent reasoning pathway in a frozen video backbone. <span class="enlarge-hint">Click to enlarge ↗</span></figcaption></figure>
-        <details class="research-detail"><summary>Why use adaptive virtual temporal relations?<span aria-hidden="true">+</span></summary><div class="detail-content"><p>Conditional generation tasks exhibit different condition-to-target LPIPS distributions, overlapping with the transformation ranges found in natural videos. Their broad within-task variation motivates an input-dependent temporal relation.</p><figure class="paper-figure"><button class="figure-button" data-lightbox="static/images/motivation.webp" data-caption="Condition-target distances and natural video transformations." aria-label="Enlarge the motivation figure"><img src="static/images/motivation.webp" alt="Motivation figure comparing LPIPS distance distributions for natural video frames, image editing, subject-driven generation, and Canny-to-image generation" width="1800" height="1509" loading="lazy"></button><figcaption>Different tasks call for different transformation magnitudes, with variation among samples within each task.</figcaption></figure></div></details>
       </div>
     </section>
 
@@ -109,8 +123,12 @@
 cd FrameForge
 python -m pip install -r requirements.txt
 
+python -m pip install modelscope
+
 hf download tencent/HunyuanVideo-1.5 --local-dir ./ckpts
 hf download Qwen/Qwen2.5-VL-7B-Instruct --local-dir ./ckpts/text_encoder/llm
+hf download google/byt5-small --local-dir ./ckpts/text_encoder/byt5-small
+modelscope download --model AI-ModelScope/Glyph-SDXL-v2 --local_dir ./ckpts/text_encoder/Glyph-SDXL-v2
 hf download black-forest-labs/FLUX.1-Redux-dev --local-dir ./ckpts/vision_encoder/siglip
 hf download lyneeeeeeeee/FrameForge pytorch_lora_weights.safetensors --local-dir ./checkpoints</code></pre></div></div></details>
         <div class="inference-header"><h3>Run inference</h3><a href="https://github.com/Lyne1/FrameForge#inference" target="_blank" rel="noopener noreferrer">Full instructions ↗</a></div><p class="inference-note">Run from the repository root. Replace the input path and prompt. Prepare reference and condition images at <strong>512 × 512</strong>; the generated output is also <strong>512 × 512</strong>.</p>
