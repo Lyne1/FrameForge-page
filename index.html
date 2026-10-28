@@ -19,6 +19,8 @@
   <meta name="twitter:title" content="FrameForge: Unified Image Generation with Video Priors">
   <meta name="twitter:description" content="Adaptive temporal relations for three conditional image-generation tasks with one shared model.">
   <meta name="twitter:image" content="static/images/social-preview.png">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.36545">
+  <meta name="citation_arxiv_id" content="2610.36545">
   <meta name="citation_title" content="FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation">
   <meta name="citation_author" content="Lin, Yijing">
   <meta name="citation_author" content="Mao, Zhendong">
@@ -30,7 +32,7 @@
   <link rel="stylesheet" href="static/css/index.css">
   <script defer src="static/js/index.js"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation","description":"Input-adaptive virtual temporal relations for unified conditional image generation with video foundation models.","author":[{"@type":"Person","name":"Yijing Lin","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]},{"@type":"Person","name":"Zhendong Mao","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]},{"@type":"Person","name":"Mengqi Huang","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"},{"@type":"Organization","name":"FrameX.AI"}]},{"@type":"Person","name":"Yuxin Wang","affiliation":[{"@type":"Organization","name":"FrameX.AI"}]},{"@type":"Person","name":"Yongdong Zhang","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]}],"isAccessibleForFree":true,"about":["Conditional image generation","Video foundation models","Temporal relation modeling"],"codeRepository":"https://github.com/Lyne1/FrameForge"}
+  {"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation","description":"Input-adaptive virtual temporal relations for unified conditional image generation with video foundation models.","author":[{"@type":"Person","name":"Yijing Lin","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]},{"@type":"Person","name":"Zhendong Mao","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]},{"@type":"Person","name":"Mengqi Huang","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"},{"@type":"Organization","name":"FrameX.AI"}]},{"@type":"Person","name":"Yuxin Wang","affiliation":[{"@type":"Organization","name":"FrameX.AI"}]},{"@type":"Person","name":"Yongdong Zhang","affiliation":[{"@type":"Organization","name":"University of Science and Technology of China"}]}],"isAccessibleForFree":true,"about":["Conditional image generation","Video foundation models","Temporal relation modeling"],"codeRepository":"https://github.com/Lyne1/FrameForge","url":"https://arxiv.org/abs/2610.36545","identifier":"arXiv:2610.36545"}
   </script>
 </head>
 <body>
@@ -50,7 +52,7 @@
         <p class="affiliation"><span><sup>1</sup> University of Science and Technology of China</span> &nbsp; <span><sup>2</sup> FrameX.AI</span></p>
         <p class="corresponding">* Corresponding author</p>
         <div class="publication-links">
-          <span class="resource-button unavailable" aria-label="Paper link is not yet available" title="The paper link will be added when available"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M8 12h8M8 16h6"/></svg>Paper <span class="soon">Coming soon</span></span>
+          <a class="resource-button" href="https://arxiv.org/pdf/2610.36545" target="_blank" rel="noopener noreferrer" aria-label="Read the FrameForge paper on arXiv (PDF)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M8 12h8M8 16h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
           <a class="resource-button primary" href="https://github.com/Lyne1/FrameForge" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/></svg>Code <span aria-hidden="true">↗</span></a>
           <a class="resource-button" href="https://huggingface.co/lyneeeeeeeee/FrameForge" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg>Model weights <span aria-hidden="true">↗</span></a>
         </div>
@@ -141,12 +143,16 @@ hf download lyneeeeeeeee/FrameForge pytorch_lora_weights.safetensors --local-dir
   --num_inference_steps 50</code></pre></div><p class="inference-footnote">The launcher selects the 720p video backbone; image-generation output remains 512 × 512.</p>
       </div></section>
 
-    <section class="section citation-section" aria-labelledby="citation-title"><div class="container narrow"><div class="citation-heading"><div><p class="eyebrow">Reference</p><h2 class="section-title" id="citation-title">Citation</h2></div></div><p class="citation-note">Provisional BibTeX, matching the code release. Publication metadata will be added when available.</p><div class="code-block citation-code"><button class="copy-button" data-copy="bibtex" aria-label="Copy BibTeX citation">Copy BibTeX</button><pre><code id="bibtex">@misc{lin2026frameforge,
+    <section class="section citation-section" aria-labelledby="citation-title"><div class="container narrow"><div class="citation-heading"><div><p class="eyebrow">Reference</p><h2 class="section-title" id="citation-title">Citation</h2></div></div><p class="citation-note">If you use FrameForge in your research, please cite the arXiv paper below.</p><div class="code-block citation-code"><button class="copy-button" data-copy="bibtex" aria-label="Copy BibTeX citation">Copy BibTeX</button><pre><code id="bibtex">@misc{lin2026frameforge,
   title  = {FrameForge: Harnessing Priors of Video Foundation Models
             for Unified Image Generation},
   author = {Yijing Lin and Zhendong Mao and Mengqi Huang
             and Yuxin Wang and Yongdong Zhang},
-  year   = {2026}
+  year   = {2026},
+  eprint = {2610.36545},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url    = {https://arxiv.org/abs/2610.36545}
 }</code></pre></div></div></section>
   </main>
   <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="#top">FrameForge</a><p>University of Science and Technology of China · FrameX.AI</p></div><p class="attribution">Website adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a><br>and <a href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer">Nerfies</a>. Website template: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</p></div></footer>

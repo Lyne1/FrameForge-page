@@ -10,7 +10,7 @@
    - `chapters/5_experiments.tex`: DreamBench, COCO2017, and GEdit-Bench quantitative tables; inference settings; and expert-routing analysis.
    - `images/`: all six research figures used on this page.
 2. `/data2/linyj/frameforge/README.md`, `configs/final.sh`, `scripts/infer.sh`, `infer.py`, and `hyvideo/pipelines/hunyuan_video_pipeline.py`: released inference configuration, weights, quick-start commands, and fixed 512 × 512 image output.
-3. The author supplied `https://github.com/Lyne1/FrameForge` as the Code URL and confirmed that a paper link is not yet available.
+3. The author supplied `https://github.com/Lyne1/FrameForge` as the Code URL and `https://arxiv.org/pdf/2610.36545` as the paper URL. The arXiv record confirms the title, author order, and manuscript identifier.
 
 ## Figure preparation
 
@@ -20,4 +20,4 @@ Teaser images are crops of the input and Ours columns: corgi / subject-driven ge
 
 ## Scope
 
-No public manuscript identifier, accepted venue, release announcement, author homepage, or deployment domain is inferred. The reference is the provisional 2026 BibTeX in the code README. Code and model licenses remain separate from the website template license.
+The public manuscript identifier is arXiv:2610.36545. The reference matches the arXiv paper and code README. No accepted venue or acceptance status is inferred. Code and model licenses remain separate from the website template license.
