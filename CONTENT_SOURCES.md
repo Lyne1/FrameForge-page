@@ -10,7 +10,7 @@
    - `chapters/5_experiments.tex`: DreamBench, COCO2017, and GEdit-Bench quantitative tables; inference settings; and expert-routing analysis.
    - `images/`: all six research figures used on this page.
 2. `/data2/linyj/frameforge/README.md`, `configs/final.sh`, `scripts/infer.sh`, `infer.py`, and `hyvideo/pipelines/hunyuan_video_pipeline.py`: released inference configuration, weights, quick-start commands, and fixed 512 × 512 image output.
-3. The author supplied `https://github.com/Lyne1/FrameForge` as the Code URL and `https://arxiv.org/pdf/2610.36545` as the paper URL. The arXiv record confirms the title, author order, and manuscript identifier.
+3. The author supplied `https://github.com/FrameX-AI/FrameForge` as the Code URL and `https://arxiv.org/pdf/2610.36545` as the paper URL. The arXiv record confirms the title, author order, and manuscript identifier.
 
 ## Figure preparation
 

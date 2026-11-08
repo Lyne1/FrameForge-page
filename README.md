@@ -4,7 +4,7 @@ Static academic project page for **FrameForge: Harnessing Priors of Video Founda
 
 ## Links and publication
 
-- Code: <https://github.com/Lyne1/FrameForge>
+- Code: <https://github.com/FrameX-AI/FrameForge>
 - Weights: <https://huggingface.co/lyneeeeeeeee/FrameForge>
 - Paper: [arXiv:2610.36545 (PDF)](https://arxiv.org/pdf/2610.36545). The hero Paper button opens the PDF, and the page includes the confirmed arXiv identifier and PDF metadata.
 - The BibTeX includes the arXiv identifier and matches the inference repository README. No conference or acceptance status is asserted.
